@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    char names[3][20];
-    int marks[3][3];
-    int total[3];
-    float average[3];
+    char names[5][20];
+    int marks[5][3];
+    int total[5];
+    float average[5];
 
     // Read student names and marks
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 5; i++)
     {
         cout << "\nEnter name of student " << i + 1 << ": ";
         cin.getline(names[i], 20);
@@ -44,7 +44,7 @@ int main()
 
     cout << "-------------------------------------------------------------\n";
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 5; i++)
     {
         cout << left
              << setw(20) << names[i]
@@ -59,7 +59,7 @@ int main()
     // Find the top student
     int top = 0;
 
-    for (int i = 1; i < 3; i++)
+    for (int i = 1; i < 5; i++)
     {
         if (total[i] > total[top])
         {
